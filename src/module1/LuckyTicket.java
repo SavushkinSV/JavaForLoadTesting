@@ -16,7 +16,6 @@ public class LuckyTicket {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
-
     }
 
     /**
@@ -50,7 +49,7 @@ public class LuckyTicket {
     private static int getNumber(char ch) throws IOException {
         int number = Character.getNumericValue(ch);
         if (number < 0 || number > 9) {
-            throw new IOException("Некорректный номер билета.");
+            throw new IOException("Ошибка. Некорректный номер билета.");
         }
 
         return number;
@@ -66,5 +65,4 @@ public class LuckyTicket {
 
         return line;
     }
-
 }

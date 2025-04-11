@@ -1,4 +1,4 @@
-package module1;
+package calculator;
 
 import java.io.IOException;
 import java.util.Scanner;
