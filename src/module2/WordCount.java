@@ -16,7 +16,6 @@ public class WordCount {
         WordCount wc = new WordCount();
         String line = wc.inputLine();
         wc.countNumberOfWords(line);
-
     }
 
     private String inputLine() {
@@ -32,10 +31,6 @@ public class WordCount {
         if (line.isEmpty()) return;
 
         String[] arrayWords =  line.split(" ");
-
-
-
-
         Map<String, Integer> wordCountMap = new HashMap<>();
         for (String word : arrayWords) {
             if (wordCountMap.containsKey(word)) {
@@ -45,16 +40,11 @@ public class WordCount {
             }
         }
         printNumberOfWords(wordCountMap);
-
-
     }
 
     private void printNumberOfWords(Map<String, Integer> wordCountMap) {
         for (Map.Entry<String, Integer> entry : wordCountMap.entrySet()) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }
-
     }
-
-
 }
