@@ -17,13 +17,11 @@ public class Palindrome {
         } else {
             System.out.println("Обычная строка.");
         }
-
     }
 
     private static boolean checkPalindrome(String line) {
         line = line.toLowerCase();
         line = line.replaceAll(" ", "");
-
         String reverse = new StringBuilder(line).reverse().toString();
 
         return line.equals(reverse);
