@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
  * привет текст проблема язык программирование курс идея текст заглушка утечка курс цикл текст апрель
  */
 
-public class WordClass1 {
+public class WordCount1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите текст для подсчёта количества разных слов:");
